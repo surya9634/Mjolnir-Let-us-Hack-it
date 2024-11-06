@@ -1,0 +1,82 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #0d0d1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(13, 13, 31, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px #1e90ff, 0px 0px 40px #ff4c4c;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #1e90ff;
+    margin-bottom: 1.5rem;
+    text-shadow: 0px 0px 10px #1e90ff;
+}
+
+.button-container {
+    margin-bottom: 1.5rem;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+    color: #0d0d1f;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4c4c;
+    color: #ffffff;
+    box-shadow: 0px 4px 15px rgba(255, 76, 76, 0.5), 0px 4px 15px rgba(30, 144, 255, 0.5);
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(30, 144, 255, 0.6);
+}
+
+#videoElement {
+    width: 100%;
+    border-radius: 15px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+    }
+}
